@@ -1,0 +1,334 @@
+/* Generated from https://autoprefixer.github.io/ */
+
+@-webkit-keyframes moleGoUp {
+    from {
+      -webkit-transform: translateY(40px);
+              transform: translateY(40px);
+    }
+    to {
+      -webkit-transform: translateY(-20px);
+              transform: translateY(-20px);
+    }
+  }
+
+@keyframes moleGoUp {
+    from {
+      -webkit-transform: translateY(40px);
+              transform: translateY(40px);
+    }
+    to {
+      -webkit-transform: translateY(-20px);
+              transform: translateY(-20px);
+    }
+  }
+
+html,
+body {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #56ab2f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #56ab2f,
+    #a8e063
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(
+    linear,
+    left top, right top,
+    from(#56ab2f),
+    to(#a8e063)
+  );
+  background: -webkit-linear-gradient(
+    left,
+    #56ab2f,
+    #a8e063
+  );
+  background: -o-linear-gradient(
+    left,
+    #56ab2f,
+    #a8e063
+  );
+  background: linear-gradient(
+    to right,
+    #56ab2f,
+    #a8e063
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+#controls {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 30px;
+  width: 100%;
+}
+
+#stop {
+  background: #c31432;
+  background: -webkit-linear-gradient(
+    to right,
+   #240b36, 
+   #c31432
+  );  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(
+    linear, 
+    left top, right top, 
+    from(#240b36),
+    to(#c31432)
+   );
+  background: -webkit-linear-gradient(
+    left, 
+    #240b36,
+    #c31432
+   );
+  background: -o-linear-gradient(
+    left, 
+    #240b36,
+    #c31432
+   );
+  background: linear-gradient(
+    to right, 
+    #240b36,
+    #c31432
+   ); 
+  border-radius: 5px;
+  border: none;
+  -webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+  cursor: pointer;
+  display: none;
+  font-size: 2rem;
+  font-weight: lighter;
+  height: 50px;
+  outline: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 250px;
+}
+
+#start, #reset {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fc466b;
+  background: -webkit-linear-gradient(
+    to right,
+    #3f5efb,
+    #fc466b
+  );
+  background: -webkit-gradient(
+    linear,
+    left top, right top,
+    from(#3f5efb),
+    to(#fc466b)
+  );
+  background: -webkit-linear-gradient(
+    left,
+    #3f5efb,
+    #fc466b
+  );
+  background: -o-linear-gradient(
+    left,
+    #3f5efb,
+    #fc466b
+  );
+  background: linear-gradient(
+    to right,
+    #3f5efb,
+    #fc466b
+  ); 
+  border-radius: 5px;
+  border: none;
+  -webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2rem;
+  font-weight: lighter;
+  height: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  outline: none;
+  width: 250px;
+}
+
+#gameboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: hidden;
+  height: 600px;
+  width: 600px;
+}
+
+.mole {
+  -webkit-animation: moleGoUp 1s forwards;
+          animation: moleGoUp 1s forwards;
+  background: #000000;
+  background: -webkit-linear-gradient(to bottom, #434343, #000000);
+  background: -webkit-gradient(linear, left top, left bottom, from(#434343), to(#000000));
+  background: -webkit-linear-gradient(top, #434343, #000000);
+  background: -o-linear-gradient(top, #434343, #000000);
+  background: linear-gradient(to bottom, #434343, #000000);
+  border-radius: 100%;
+  cursor: pointer;
+  height: 120px;
+  position: absolute;
+  width: 100px;
+  z-index: 1;
+}
+
+.hole {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  background: #fceabb;
+  background: -webkit-linear-gradient(to bottom, #f8b500, #fceabb);
+  background: -webkit-gradient(linear, left top, left bottom, from(#f8b500), to(#fceabb));
+  background: -webkit-linear-gradient(top, #f8b500, #fceabb);
+  background: -o-linear-gradient(top, #f8b500, #fceabb);
+  background: linear-gradient(to bottom, #f8b500, #fceabb);
+  border-top-left-radius:50%;
+  border-top-right-radius:50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px;
+  width: 100%;
+  z-index: 2;
+}
+
+#score {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFF;
+  border-radius: 5px;
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2rem;
+  font-weight: lighter;
+  height: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-content: center;
+  margin: 30px 0;
+  padding: 15px;
+  width: 300px;
+  z-index: 2;
+}
+
+.tile {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 33.33%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  width: 33.33%;
+}
+
+
+/* MEDIUM SCREENS */
+@media only screen and (min-width: 480px) and (max-width: 992px) {
+
+  body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  #controls {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  #stop {
+    margin: 20px 0;
+  }
+
+}
+
+/* SMALL SCREENS */
+@media only screen and (max-width: 479px) {
+  @-webkit-keyframes moleGoUp {
+    from {
+      -webkit-transform: translateY(40px);
+              transform: translateY(40px);
+    }
+    to {
+      -webkit-transform: translateY(-20px);
+              transform: translateY(-20px);
+    }
+  }
+  @keyframes moleGoUp {
+    from {
+      -webkit-transform: translateY(40px);
+              transform: translateY(40px);
+    }
+    to {
+      -webkit-transform: translateY(-20px);
+              transform: translateY(-20px);
+    }
+  }
+
+  #controls {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  #gameboard {
+    height: 450px;
+    width: 450px;
+  }
+
+  .mole {
+    height: 80px;
+    width: 80px;
+  }
+
+}
